@@ -1,0 +1,10 @@
+{
+  "applications": [
+    {"name": "webshop", "functions": [
+      {"name": "checkout", "labels": ["prod"], "timeout": 60, "memory": 256,
+       "config": {"LOG_LEVEL": "info"}},
+      {"name": "image-resize", "labels": ["prod"], "timeout": 90, "memory": 512,
+       "config": {"LOG_LEVEL": "info"}}
+    ]}
+  ]
+}
