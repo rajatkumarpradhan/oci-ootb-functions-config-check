@@ -1,0 +1,13 @@
+{
+  "applications": [
+    {"name": "webshop", "functions": [
+      {"name": "checkout", "labels": ["prod"], "timeout": 60, "memory": 256,
+       "config": {"DB_PASSWORD": "s3cret", "LOG_LEVEL": "info"}},
+      {"name": "fraud-scan", "labels": ["prod"], "memory": 512,
+       "config": {"LOG_LEVEL": "warn"}},
+      {"name": "invoice-render", "labels": ["prod"], "timeout": 120,
+       "config": {"LOG_LEVEL": "info"}}
+    ]},
+    {"name": "experiments", "functions": []}
+  ]
+}
